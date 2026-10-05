@@ -12,7 +12,7 @@
     <meta property="og:site_name" content="MC Limp Materiais de Limpeza">
     <meta property="og:title" content="MC Limp | Links Oficiais e Atendimento">
     <meta property="og:description" content="Fale conosco no WhatsApp, veja os produtos, endereço e como chegar na MC Limp Guarujá.">
-    <meta property="og:image" content="logotipo-mclimp.jpg">
+    <meta property="og:image" content="images/logotipo-mclimp.JPG">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +25,10 @@
             theme: {
                 extend: {
                     colors: {
-                        'verde-escuro': '#043927',
-                        'verde-principal': '#0A5C43',
-                        'azul-piscina': '#00D8D6',
-                        'azul-piscina-hover': '#00B8B6',
+                        'azul-escuro': '#022438',
+                        'azul-principal': '#0A435C',
+                        'verde-destaque': '#00E676',
+                        'verde-hover': '#00C853',
                         'cinza-texto': '#1F2937'
                     },
                     fontFamily: {
@@ -43,7 +43,7 @@
     <style>
         body { 
             font-family: 'Inter', sans-serif; 
-            background: linear-gradient(135deg, rgba(2, 36, 24, 0.88) 0%, rgba(4, 57, 39, 0.85) 50%, rgba(0, 50, 60, 0.9) 100%), 
+            background: linear-gradient(135deg, rgba(2, 36, 56, 0.92) 0%, rgba(4, 55, 75, 0.88) 50%, rgba(0, 75, 90, 0.92) 100%), 
                         url('images/background-limpeza.jpg') center / cover no-repeat fixed;
             min-height: 100vh; 
         }
@@ -52,9 +52,9 @@
             font-family: 'Plus Jakarta Sans', sans-serif; 
         }
         
-        /* Painel Translúcido Corporativo */
+        /* Painel Translúcido Corporativo em Tom Azul */
         .glass-panel {
-            background: rgba(4, 35, 25, 0.55);
+            background: rgba(2, 36, 56, 0.60);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-left: 1px solid rgba(255, 255, 255, 0.12);
@@ -73,26 +73,27 @@
         .bio-btn:hover {
             transform: translateY(-2px);
             background: rgba(255, 255, 255, 0.18);
-            border-color: #00D8D6;
-            box-shadow: 0 6px 20px rgba(0, 216, 214, 0.25);
+            border-color: #00E676;
+            box-shadow: 0 6px 20px rgba(0, 230, 118, 0.25);
             color: #FFFFFF;
         }
         .bio-btn:active {
             transform: translateY(0);
         }
 
+        /* Botão Destaque Principal em Verde Neon/Limão Corporativo */
         .bio-btn-highlight {
-            background: #00D8D6;
-            color: #022418;
-            font-weight: 700;
-            border: 1px solid #00D8D6;
-            box-shadow: 0 4px 18px rgba(0, 216, 214, 0.35);
+            background: #00E676;
+            color: #022438;
+            font-weight: 800;
+            border: 1px solid #00E676;
+            box-shadow: 0 4px 18px rgba(0, 230, 118, 0.35);
         }
         .bio-btn-highlight:hover {
-            background: #00C2C0;
-            border-color: #00C2C0;
-            color: #011910;
-            box-shadow: 0 8px 25px rgba(0, 216, 214, 0.5);
+            background: #00C853;
+            border-color: #00C853;
+            color: #011926;
+            box-shadow: 0 8px 25px rgba(0, 230, 118, 0.5);
             transform: translateY(-2px);
         }
     </style>
@@ -103,24 +104,24 @@
         
         <!-- CABEÇALHO DO PERFIL -->
         <div class="text-center mb-8 relative">
-            <!-- Glow azul piscina atrás da logo -->
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-44 h-44 rounded-full bg-[#00D8D6]/20 blur-3xl -z-10"></div>
+            <!-- Glow verde destaque atrás da logo -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-44 h-44 rounded-full bg-[#00E676]/20 blur-3xl -z-10"></div>
             
-            <!-- Logo da MC Limp -->
-            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-[#00D8D6] shadow-2xl mb-4 bg-white relative p-1">
-                <img src="logotipo-mclimp.jpg" onerror="this.src='../images/logotipo-mclimp.jpg'" alt="MC Limp Materiais de Limpeza - Guarujá" class="w-full h-full object-contain rounded-full">
+            <!-- Logo da MC Limp (Suporta .JPG / .jpg) -->
+            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-[#00E676] shadow-2xl mb-4 bg-white relative p-1">
+                <img src="images/logotipo-mclimp.JPG" onerror="this.onerror=null; this.src='images/logotipo-mclimp.jpg';" alt="MC Limp Materiais de Limpeza - Guarujá" class="w-full h-full object-contain rounded-full">
             </div>
             
             <!-- Nome da Empresa -->
             <h1 class="text-2xl font-extrabold tracking-tight text-white uppercase">
                 MC Limp
             </h1>
-            <p class="text-[11px] text-[#00D8D6] font-bold uppercase tracking-[0.18em] mt-1.5">
+            <p class="text-[11px] text-[#00E676] font-bold uppercase tracking-[0.18em] mt-1.5">
                 Produtos de Limpeza • Piscinas • Utilidades
             </p>
             
             <!-- Endereço Clicável sem Ícones -->
-            <a href="https://maps.app.goo.gl/e4sWkLPsoVrtJmex7" target="_blank" rel="noopener" class="text-[11px] text-gray-200 max-w-xs mx-auto mt-3.5 leading-relaxed font-medium block hover:underline hover:text-[#00D8D6] transition-all bg-white/5 py-2.5 px-4 rounded-lg border border-white/10">
+            <a href="https://maps.app.goo.gl/e4sWkLPsoVrtJmex7" target="_blank" rel="noopener" class="text-[11px] text-gray-200 max-w-xs mx-auto mt-3.5 leading-relaxed font-medium block hover:underline hover:text-[#00E676] transition-all bg-white/5 py-2.5 px-4 rounded-lg border border-white/10">
                 R. José Silva Figueiredo, 661 - Jardim Três Marias, Guarujá - SP
             </a>
         </div>
@@ -128,7 +129,7 @@
         <!-- BOTÕES DE ATENDIMENTO E NAVEGAÇÃO -->
         <div class="space-y-3.5 mb-10">
             
-            <!-- WhatsApp (CTA Principal com destaque azul piscina) -->
+            <!-- WhatsApp (CTA Principal com destaque verde vívido) -->
             <a href="https://wa.me/5513988542991?text=Ol%C3%A1!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener" class="bio-btn bio-btn-highlight block w-full py-4 px-5 text-center">
                 <span class="text-sm font-extrabold block">
                     Falar no WhatsApp
@@ -156,13 +157,6 @@
                 </span>
             </a>
 
-            <!-- Salvar Contato na Agenda -->
-            <a href="/contato.vcf" class="bio-btn block w-full py-3.5 px-5 text-center">
-                <span class="text-sm font-semibold block">
-                    Salvar Contato na Agenda
-                </span>
-            </a>
-
         </div>
 
         <!-- SEÇÃO DO MAPA INTERATIVO (IFRAME) -->
@@ -176,16 +170,16 @@
     </main>
 
     <!-- FOOTER COM REFORÇO DO NAP E CRÉDITOS DA RSA DIGITAL -->
-    <footer class="w-full bg-[#021810]/90 backdrop-blur-md pt-8 pb-6 text-center border-t border-white/10 relative z-10 text-xs text-gray-300">
+    <footer class="w-full bg-[#011B2A]/90 backdrop-blur-md pt-8 pb-6 text-center border-t border-white/10 relative z-10 text-xs text-gray-300">
         <!-- Bloco NAP no Footer -->
         <div class="max-w-xs mx-auto space-y-2 px-4 mb-4">
-            <h3 class="font-bold text-[#00D8D6] text-sm tracking-wide">MC Limp Materiais de Limpeza</h3>
+            <h3 class="font-bold text-[#00E676] text-sm tracking-wide">MC Limp Materiais de Limpeza</h3>
             <p class="text-[11px] text-gray-300 leading-relaxed">
                 R. José Silva Figueiredo, 661 - Jardim Três Marias<br>Guarujá - SP • CEP 11440-440
             </p>
             <p class="text-[11px] font-semibold text-white pt-1">
-                📞 <a href="tel:551333043046" class="hover:underline hover:text-[#00D8D6]">(13) 3304-3046</a> 
-                • 💬 <a href="https://wa.me/5513988542991?text=Ol%C3%A1!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener" class="hover:underline hover:text-[#00D8D6]">(13) 98854-2991</a>
+                📞 <a href="tel:551333043046" class="hover:underline hover:text-[#00E676]">(13) 3304-3046</a> 
+                • 💬 <a href="https://wa.me/5513988542991?text=Ol%C3%A1!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener" class="hover:underline hover:text-[#00E676]">(13) 98854-2991</a>
             </p>
         </div>
 
@@ -193,11 +187,43 @@
 
         <p class="text-[9px] text-gray-400 uppercase tracking-[0.2em]">
             Desenvolvido por 
-            <a href="https://wa.me/5512988052097?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20cria%C3%A7%C3%A3o%20de%20sites.%20Vim%20pelo%20link%20da%20MC%20Limp." target="_blank" rel="noopener" class="font-bold text-[#00D8D6] hover:underline transition-all">
+            <a href="https://wa.me/5512988052097?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20cria%C3%A7%C3%A3o%20de%20sites.%20Vim%20pelo%20link%20da%20MC%20Limp." target="_blank" rel="noopener" class="font-bold text-[#00E676] hover:underline transition-all">
                 RSA Digital
             </a>
         </p>
     </footer>
+
+    <!-- JS de Cópia da Chave Pix -->
+    <script>
+        function copyPixKey() {
+            const pixKey = "35.636.247/0001-83";
+            const tempInput = document.createElement("input");
+            tempInput.value = pixKey;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999);
+            
+            try {
+                document.execCommand("copy");
+                const title = document.getElementById("pix-btn-title");
+                const subtitle = document.getElementById("pix-btn-subtitle");
+                
+                if (title && subtitle) {
+                    title.innerText = "✓ Chave Pix Copiada!";
+                    subtitle.innerText = "35.636.247/0001-83 (Cole no seu app do banco)";
+                    
+                    setTimeout(() => {
+                        title.innerText = "Copiar Chave Pix (CNPJ)";
+                        subtitle.innerText = "Mercado Pago • M. C. Limp. Materiais De Limpeza Ltda";
+                    }, 3500);
+                }
+            } catch (err) {
+                console.error("Erro ao copiar chave pix", err);
+            }
+            
+            document.body.removeChild(tempInput);
+        }
+    </script>
 
 </body>
 </html>
