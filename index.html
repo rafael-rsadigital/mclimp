@@ -1,0 +1,330 @@
+<!-- Open Graph / SEO Social -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="MC Limp Materiais de Limpeza">
+<meta property="og:title" content="MC Limp | Links Oficiais e Atendimento">
+<meta property="og:description" content="Fale conosco no WhatsApp, veja os produtos, endereço e como chegar na MC Limp Guarujá.">
+<meta property="og:image" content="logotipo-mclimp.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'verde-escuro': '#043927',
+                    'verde-principal': '#0A5C43',
+                    'azul-piscina': '#00D8D6',
+                    'azul-piscina-hover': '#00B8B6',
+                    'verde-folha': '#10B981',
+                    'cinza-texto': '#333333'
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    body { 
+        font-family: 'Inter', sans-serif; 
+        background: radial-gradient(circle at top left, #0A5C43 0%, #043927 50%, #022418 100%);
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh; 
+    }
+    h1, h2, h3, h4 { 
+        font-family: 'Montserrat', sans-serif; 
+    }
+    
+    /* Efeito de Vidro Translúcido */
+    .glass-panel {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+        border-left: 1px solid rgba(255, 255, 255, 0.12);
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .bio-btn {
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        border-radius: 0.6rem;
+        color: #FFFFFF;
+    }
+    .bio-btn:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.22);
+        border-color: #00D8D6;
+        box-shadow: 0 0 20px rgba(0, 216, 214, 0.35), 0 8px 16px rgba(0, 0, 0, 0.25);
+        color: #E6FFFF;
+    }
+    .bio-btn:active {
+        transform: translateY(0) scale(0.98);
+    }
+
+    .bio-btn-highlight {
+        background: linear-gradient(135deg, #00D8D6 0%, #009999 100%);
+        color: #043927;
+        font-weight: 800;
+        border: none;
+        box-shadow: 0 4px 15px rgba(0, 216, 214, 0.3);
+    }
+    .bio-btn-highlight:hover {
+        background: linear-gradient(135deg, #26E6E4 0%, #00B3B3 100%);
+        color: #022418;
+        box-shadow: 0 0 25px rgba(0, 216, 214, 0.6);
+        transform: translateY(-2px);
+    }
+    
+    /* Card de Depoimento Translúcido */
+    .testimonial-card {
+        background: rgba(255, 255, 255, 0.09);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    /* Ocultar barra de rolagem do carrossel */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+
+
+<main class="w-full max-w-md mx-auto px-6 pt-12 pb-10 flex-grow relative z-10 glass-panel shadow-2xl">
+    
+    <!-- CABEÇALHO DO PERFIL -->
+    <div class="text-center mb-8 relative">
+        <!-- Aura Azul Piscina/Verde Atrás do Logo -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-44 h-44 rounded-full bg-[#00D8D6]/20 blur-3xl animate-pulse -z-10"></div>
+        
+        <!-- Círculo do Logo com Moldura Azul Piscina -->
+        <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-2 border-[#00D8D6] shadow-2xl mb-4 bg-white relative p-1">
+            <img src="logotipo-mclimp.jpg" onerror="this.src='../images/logotipo-mclimp.jpg'" alt="MC Limp Materiais de Limpeza - Guarujá" class="w-full h-full object-contain rounded-full">
+        </div>
+        
+        <!-- Nome e Nicho -->
+        <h1 class="text-2xl font-extrabold tracking-tight text-white uppercase">
+            MC Limp
+        </h1>
+        <p class="text-[12px] text-[#00D8D6] font-bold uppercase tracking-[0.18em] mt-1.5">
+            Produtos de Limpeza • Piscinas • Utilidades
+        </p>
+        
+        <!-- Endereço Clicável -->
+        <a href="https://maps.app.goo.gl/e4sWkLPsoVrtJmex7" target="_blank" rel="noopener" class="text-[11px] text-gray-200 max-w-xs mx-auto mt-3 leading-relaxed font-medium block hover:underline hover:text-[#00D8D6] transition-all">
+            📍 R. José Silva Figueiredo, 661 - Jardim Três Marias, Guarujá - SP • CEP 11440-440
+        </a>
+    </div>
+
+    <!-- BOTÕES / LINKS DE ATENDIMENTO -->
+    <div class="space-y-3.5 mb-12">
+        
+        <!-- WhatsApp (CTA Principal) -->
+        <a href="https://wa.me/5513988542991?text=Olá!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener" class="bio-btn bio-btn-highlight block w-full py-4 px-6 text-center">
+            <span class="text-[16px] block flex items-center justify-center gap-2">
+                💬 Falar no WhatsApp
+            </span>
+        </a>
+
+        <!-- Ligar na Loja -->
+        <a href="tel:551333043046" class="bio-btn block w-full py-3.5 px-6 text-center">
+            <span class="text-[15px] font-semibold block flex items-center justify-center gap-2">
+                📞 Ligar para a Loja: (13) 3304-3046
+            </span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/mc.limpeza/" target="_blank" rel="noopener" class="bio-btn block w-full py-3.5 px-6 text-center">
+            <span class="text-[15px] font-semibold block">Siga-nos no Instagram</span>
+        </a>
+
+        <!-- Como Chegar (Google Maps) -->
+        <a href="https://maps.app.goo.gl/e4sWkLPsoVrtJmex7" target="_blank" rel="noopener" class="bio-btn block w-full py-3.5 px-6 text-center">
+            <span class="text-[15px] font-semibold block">📍 Como Chegar (Google Maps)</span>
+        </a>
+
+        <!-- Salvar Contato na Agenda -->
+        <a href="/contato.vcf" class="bio-btn block w-full py-3.5 px-6 text-center">
+            <span class="text-[15px] font-semibold block">📇 Salvar Contato na Agenda</span>
+        </a>
+
+    </div>
+
+    <!-- SEÇÃO DE DEPOIMENTOS DO GOOGLE COM CARROSSEL -->
+    <div class="space-y-5 mb-10 text-center">
+        <div>
+            <h2 class="text-xl font-bold text-white mb-1.5">Avaliações dos Clientes</h2>
+            <div class="flex items-center justify-center gap-1.5 text-yellow-400 mb-1">
+                <span class="text-lg">★</span><span class="text-lg">★</span><span class="text-lg">★</span><span class="text-lg">★</span><span class="text-lg">★</span>
+                <span class="text-sm font-bold text-white ml-1.5">5.0 / 5.0</span>
+            </div>
+            <p class="text-[10px] text-gray-300 tracking-wider uppercase">(Avaliações reais no Google Meu Negócio)</p>
+        </div>
+
+        <!-- CARROSSEL TOUCH-FRIENDLY -->
+        <div class="relative w-full overflow-hidden px-0.5" id="testimonial-carousel">
+            <div class="flex scroll-smooth snap-x snap-mandatory overflow-x-auto no-scrollbar gap-3.5 pb-3" id="carousel-track">
+                
+                <!-- Depoimento 1: Maria Julia -->
+                <div class="snap-center shrink-0 w-full testimonial-card rounded-xl p-5 text-left flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Maria Julia</h4>
+                        <div class="text-yellow-400 text-xs tracking-wider my-1">★★★★★</div>
+                        <p class="text-xs text-gray-200 italic leading-relaxed">
+                            "Excelente experiência! Fui muito bem atendida, o atendimento foi rápido e os produtos de ótima qualidade. Tudo muito organizado. Com certeza voltarei novamente e recomendo para todos!"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2: Marcio Moraes -->
+                <div class="snap-center shrink-0 w-full testimonial-card rounded-xl p-5 text-left flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Marcio Moraes</h4>
+                        <div class="text-yellow-400 text-xs tracking-wider my-1">★★★★★</div>
+                        <p class="text-xs text-gray-200 italic leading-relaxed">
+                            "Excelente atendimento, tem até cafezinho !!"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3: Elvis Luiz da Cunha -->
+                <div class="snap-center shrink-0 w-full testimonial-card rounded-xl p-5 text-left flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Elvis Luiz da Cunha</h4>
+                        <div class="text-yellow-400 text-xs tracking-wider my-1">★★★★★</div>
+                        <p class="text-xs text-gray-200 italic leading-relaxed">
+                            "Melhor loja que tem para comprar material de limpeza"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Depoimento 4: Marcelo Ferreira -->
+                <div class="snap-center shrink-0 w-full testimonial-card rounded-xl p-5 text-left flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Marcelo Ferreira</h4>
+                        <div class="text-yellow-400 text-xs tracking-wider my-1">★★★★★</div>
+                        <p class="text-xs text-gray-200 italic leading-relaxed">
+                            "Loja top . atendimento 100%"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Depoimento 5: Marcelo Sapaterro -->
+                <div class="snap-center shrink-0 w-full testimonial-card rounded-xl p-5 text-left flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Marcelo Sapaterro</h4>
+                        <div class="text-yellow-400 text-xs tracking-wider my-1">★★★★★</div>
+                        <p class="text-xs text-gray-200 italic leading-relaxed">
+                            "Muito bom comprar lá, tem água e cafézinho"
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Indicadores do Carrossel (Dots) -->
+            <div class="flex justify-center flex-wrap gap-1.5 mt-2 max-w-full px-4 mx-auto" id="carousel-dots"></div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO DO MAPA INTERATIVO (IFRAME) -->
+    <div class="mt-8 space-y-3 text-center">
+        <h3 class="text-base font-bold text-white tracking-wide">Nossa Localização</h3>
+        <div class="rounded-xl overflow-hidden border border-white/15 shadow-lg testimonial-card" style="height: 230px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.384549731682!2d-46.24004012465686!3d-23.98219407851289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d1fff43ff97805%3A0x8502d232cc89887c!2sMC%20LIMP%20MATERIAIS%20DE%20LIMPEZA!5e0!3m2!1spt-BR!2sbr!4v1791209425611!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </div>
+
+</main>
+
+<!-- FOOTER COM REFORÇO DE NAP E CRÉDITOS -->
+<footer class="w-full bg-[#021f15] pt-8 pb-6 text-center border-t border-white/10 relative z-10 text-xs text-gray-300">
+    
+    <!-- Bloco NAP -->
+    <div class="max-w-xs mx-auto space-y-2 px-4 mb-5">
+        <h2 class="font-bold text-[#00D8D6] text-sm">MC Limp Materiais de Limpeza</h2>
+        <div class="h-[1px] w-12 bg-white/20 mx-auto my-1"></div>
+        <p class="leading-relaxed text-[11px]">
+            📍 R. José Silva Figueiredo, 661<br>
+            Jardim Três Marias, Guarujá - SP • CEP 11440-440
+        </p>
+        <p class="font-semibold text-white text-[11px] pt-1">
+            📞 Tel: <a href="tel:551333043046" class="hover:underline hover:text-[#00D8D6]">(13) 3304-3046</a> | 
+            💬 WhatsApp: <a href="https://wa.me/5513988542991?text=Olá!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener" class="hover:underline hover:text-[#00D8D6]">(13) 98854-2991</a>
+        </p>
+    </div>
+
+    <div class="h-[1px] w-16 bg-white/10 mx-auto my-3"></div>
+
+    <p class="text-[9px] text-gray-400 uppercase tracking-[0.2em]">
+        Desenvolvido por 
+        <a href="https://wa.me/5512988052097?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20criação%20de%20sites.%20Vim%20pelo%20link%20da%20MC%20Limp." target="_blank" rel="noopener" class="font-bold text-[#00D8D6] hover:underline transition-all">
+            RSA Digital
+        </a>
+    </p>
+</footer>
+
+<!-- Lógica JavaScript do Carrossel Automático -->
+<script>
+    const track = document.getElementById('carousel-track');
+    const dotsContainer = document.getElementById('carousel-dots');
+    const slides = track.children;
+    const totalSlides = slides.length;
+
+    // Criar os pontos indicadores (Dots)
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = `w-1.5 h-1.5 rounded-full transition-all duration-300 ${i === 0 ? 'bg-[#00D8D6] w-3.5' : 'bg-white/20'}`;
+        dot.setAttribute('aria-label', `Slide ${i + 1}`);
+        dot.addEventListener('click', () => {
+            track.scrollTo({
+                left: slides[i].offsetLeft - track.offsetLeft,
+                behavior: 'smooth'
+            });
+        });
+        dotsContainer.appendChild(dot);
+    }
+
+    const dots = dotsContainer.children;
+
+    // Atualizar Dots Ativos Conforme Rolagem
+    track.addEventListener('scroll', () => {
+        const width = track.offsetWidth;
+        const index = Math.round(track.scrollLeft / width);
+        
+        for (let i = 0; i < dots.length; i++) {
+            if (i === index) {
+                dots[i].classList.add('bg-[#00D8D6]', 'w-3.5');
+                dots[i].classList.remove('bg-white/20');
+            } else {
+                dots[i].classList.remove('bg-[#00D8D6]', 'w-3.5');
+                dots[i].classList.add('bg-white/20');
+            }
+        }
+    });
+
+    // Loop de Transição Suave Automática (A cada 5s)
+    let autoSlide = setInterval(() => {
+        const width = track.offsetWidth;
+        let nextIndex = Math.round(track.scrollLeft / width) + 1;
+        
+        if (nextIndex >= totalSlides) nextIndex = 0;
+        
+        track.scrollTo({
+            left: slides[nextIndex].offsetLeft - track.offsetLeft,
+            behavior: 'smooth'
+        });
+    }, 5000);
+
+    // Pause ao interagir
+    track.addEventListener('touchstart', () => clearInterval(autoSlide), { passive: true });
+</script>
