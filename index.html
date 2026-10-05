@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MC Limp | Link na Bio - Produtos de Limpeza e Piscinas no Guarujá</title>
-    <meta name="description" content="Acesse os canais oficiais da MC Limp Materiais de Limpeza em Guarujá. Fale no WhatsApp, veja a localização na Enseada / Jardim Três Marias e faça seu pedido.">
+    <meta name="description" content="Acesse os canais oficiais da MC Limp Materiais de Limpeza em Guarujá. Fale no WhatsApp, faça seu pedido, pague via Pix e avalie nossa loja.">
     
     <!-- Open Graph / SEO Social -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="MC Limp Materiais de Limpeza">
     <meta property="og:title" content="MC Limp | Links Oficiais e Atendimento">
-    <meta property="og:description" content="Fale conosco no WhatsApp, veja os produtos, endereço e como chegar na MC Limp Guarujá.">
+    <meta property="og:description" content="Fale conosco no WhatsApp, ligue para a loja, veja nossa localização e copie a chave Pix da MC Limp Guarujá.">
     <meta property="og:image" content="images/logotipo-mclimp.JPG">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +54,7 @@
         
         /* Painel Translúcido Corporativo em Tom Azul */
         .glass-panel {
-            background: rgba(2, 36, 56, 0.60);
+            background: rgba(2, 36, 56, 0.65);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-left: 1px solid rgba(255, 255, 255, 0.12);
@@ -81,7 +81,7 @@
             transform: translateY(0);
         }
 
-        /* Botão Destaque Principal em Verde Neon/Limão Corporativo */
+        /* Botão Destaque Principal em Verde Neon/Limão */
         .bio-btn-highlight {
             background: #00E676;
             color: #022438;
@@ -94,6 +94,22 @@
             border-color: #00C853;
             color: #011926;
             box-shadow: 0 8px 25px rgba(0, 230, 118, 0.5);
+            transform: translateY(-2px);
+        }
+
+        /* Botão Branco para Avaliação */
+        .bio-btn-white {
+            background: #FFFFFF;
+            color: #022438;
+            font-weight: 700;
+            border: 1px solid #FFFFFF;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+        }
+        .bio-btn-white:hover {
+            background: #F3F4F6;
+            border-color: #00E676;
+            color: #022438;
+            box-shadow: 0 6px 20px rgba(0, 230, 118, 0.3);
             transform: translateY(-2px);
         }
     </style>
@@ -129,7 +145,7 @@
         <!-- BOTÕES DE ATENDIMENTO E NAVEGAÇÃO -->
         <div class="space-y-3.5 mb-10">
             
-            <!-- WhatsApp (CTA Principal com destaque verde vívido) -->
+            <!-- WhatsApp (CTA Principal em Verde Destaque) -->
             <a href="https://wa.me/5513988542991?text=Ol%C3%A1!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener" class="bio-btn bio-btn-highlight block w-full py-4 px-5 text-center">
                 <span class="text-sm font-extrabold block">
                     Falar no WhatsApp
@@ -150,12 +166,22 @@
                 </span>
             </a>
 
-            <!-- Como Chegar -->
-            <a href="https://maps.app.goo.gl/e4sWkLPsoVrtJmex7" target="_blank" rel="noopener" class="bio-btn block w-full py-3.5 px-5 text-center">
-                <span class="text-sm font-semibold block">
-                    Como Chegar (Google Maps)
+            <!-- Avaliar no Google (Botão Branco) -->
+            <a href="https://g.page/r/CXyIicwy0gKFEBM/review" target="_blank" rel="noopener" class="bio-btn bio-btn-white block w-full py-3.5 px-5 text-center">
+                <span class="text-sm font-bold block">
+                    Avalie-nos no Google
                 </span>
             </a>
+
+            <!-- Botão Copiar Chave Pix em 1 Clique -->
+            <button onclick="copyPixKey()" class="bio-btn block w-full py-3.5 px-5 text-center cursor-pointer text-left transition-all">
+                <span id="pix-btn-title" class="text-sm font-bold block text-center text-[#00E676]">
+                    Copiar Chave Pix (CNPJ)
+                </span>
+                <span id="pix-btn-subtitle" class="text-[11px] text-gray-300 block text-center mt-0.5">
+                    35.636.247/0001-83 • Mercado Pago
+                </span>
+            </button>
 
         </div>
 
@@ -214,7 +240,7 @@
                     
                     setTimeout(() => {
                         title.innerText = "Copiar Chave Pix (CNPJ)";
-                        subtitle.innerText = "Mercado Pago • M. C. Limp. Materiais De Limpeza Ltda";
+                        subtitle.innerText = "35.636.247/0001-83 • Mercado Pago";
                     }, 3500);
                 }
             } catch (err) {
