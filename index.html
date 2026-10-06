@@ -9,7 +9,6 @@
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#071f2d">
   <link rel="canonical" href="https://mclimp.vercel.app/">
-  <link rel="preload" as="image" href="images/background-limpeza.webp" fetchpriority="high">
 
   <meta property="og:type" content="business.business">
   <meta property="og:locale" content="pt_BR">
@@ -48,7 +47,7 @@
     :root { --ink:#f4fbfc; --muted:#a8c0c8; --deep:#071f2d; --panel:rgba(5,35,49,.76); --line:rgba(188,232,229,.19); --mint:#72f2aa; --aqua:#5ce0df; }
     * { box-sizing:border-box; }
     body { margin:0; min-height:100vh; color:var(--ink); font-family:'DM Sans',system-ui,sans-serif; background:var(--deep); overflow-x:hidden; }
-    body::before { content:""; position:fixed; z-index:-3; inset:0; background:linear-gradient(135deg,rgba(4,26,40,.94),rgba(4,65,75,.76)),url('images/background-limpeza.webp') center/cover no-repeat; }
+    body::before { content:""; position:fixed; z-index:-3; inset:0; background:radial-gradient(circle at 12% 8%,rgba(36,128,126,.28),transparent 28%),radial-gradient(circle at 92% 25%,rgba(114,242,170,.12),transparent 24%),linear-gradient(145deg,#061a29 0%,#073f4b 48%,#051924 100%); }
     body::after { content:""; position:fixed; z-index:-2; inset:-30%; pointer-events:none; opacity:.36; background:linear-gradient(112deg,transparent 40%,rgba(114,242,170,.13) 48%,rgba(92,224,223,.17) 53%,transparent 61%); animation:sweep 15s ease-in-out infinite; }
     @keyframes sweep { 0%,100% { transform:translateX(-13%) rotate(-5deg); } 50% { transform:translateX(14%) rotate(-5deg); } }
     @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-4px); } }
